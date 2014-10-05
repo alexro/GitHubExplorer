@@ -1,0 +1,44 @@
+<div class="row" ng-controller="DetailsCtrl as details">
+    <div class="page-header">
+        <h1>{{details.repo.name}} <small><i>by</i> {{details.repo.owner.login}}</small></h1>
+    </div>
+    <h3>{{details.repo.description}}</h3>
+
+    <div class="row" style="margin-top:15px">
+        <div class="col-sm-3 col-md-4">
+            <div class="thumbnail">
+                <div>
+                    <span class="octicon octicon-mark-github"></span>
+                    <a target="_blank" href="https://github.com/{{details.repo.full_name}}">{{details.repo.full_name}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+            <div class="thumbnail">
+                <div>
+                    <span class="octicon octicon-star"></span>
+                    <span class="badge pull-right">{{details.repo.stargazers_count}}</span>
+                    Stars
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+            <div class="thumbnail">
+                <div>
+                    <span class="octicon octicon-repo-forked"></span>
+                    <span class="badge pull-right">{{details.repo.forks}}</span>
+                    Forks
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-2">
+            <div class="thumbnail">
+                <div>
+                    <span class="octicon octicon-issue-opened"></span>
+                    <span class="badge pull-right">{{details.repo.open_issues}}</span>
+                    Issues
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

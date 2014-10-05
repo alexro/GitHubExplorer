@@ -1,0 +1,12 @@
+<div class="caption">
+    <h3>Found Repositories</h3>
+</div>
+<div ng-controller="ResultsCtrl as results">
+    <ul class="nav">
+        <li ng-class="{active:results.isActive(item)}" ng-repeat="item in results.items">
+            <a href="#" ng-click="results.selectRepository(item)">
+                <img class="menu_avatar" src="{{item.owner.avatar_url}}" />{{item.full_name}}
+            </a>
+        </li>
+    </ul>
+</div>
