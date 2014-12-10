@@ -1,7 +1,1 @@
-** code structure according to
-https://docs.google.com/document/d/1XXMvReO8-Awi1EZXAXS4PzDzdNvV6pGcuaF4Q9821Es/edit
-
-** outstanding tasks
-- UI polishing
-- minification
-- testing in different browsers
+GitHubExplorer is a AngulaJS-based project allowing to search for repositories on GitHub and view the repository's details
